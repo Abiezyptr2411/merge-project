@@ -39,7 +39,7 @@
                                         foreach ($request as $row) : ?>
                                           <tr>
                                               <td><?= $no++; ?></td>
-                                              <td><?php echo date('d F Y', strtotime($row->date_request)); ?></td>
+                                              <td><?php echo date('d F Y', strtotime($row->created_at)); ?></td>
                                               <td><?= $row->nama_karyawan ?></td>
                                               <td><?= $row->nama_brg ?></td>
                                               <td><?= $row->qty ?></td>
